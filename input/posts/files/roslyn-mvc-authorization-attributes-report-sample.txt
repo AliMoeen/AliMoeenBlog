@@ -1,0 +1,127 @@
+
+===============================
+Type: AsyncController
+===============================
+
+===============================
+Type: AccountController
+		[AuthorizeAttribute]
+===============================
+	Login 
+		[AllowAnonymousAttribute]
+	Login 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	VerifyCode 
+		[AllowAnonymousAttribute]
+	VerifyCode 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	Register 
+		[AllowAnonymousAttribute]
+	Register 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ConfirmEmail 
+		[AllowAnonymousAttribute]
+	ForgotPassword 
+		[AllowAnonymousAttribute]
+	ForgotPassword 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ForgotPasswordConfirmation 
+		[AllowAnonymousAttribute]
+	ResetPassword 
+		[AllowAnonymousAttribute]
+	ResetPassword 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ResetPasswordConfirmation 
+		[AllowAnonymousAttribute]
+	ExternalLogin 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	SendCode 
+		[AllowAnonymousAttribute]
+	SendCode 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ExternalLoginCallback 
+		[AllowAnonymousAttribute]
+	ExternalLoginConfirmation 
+		[HttpPostAttribute]
+		[AllowAnonymousAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	LogOff 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ExternalLoginFailure 
+		[AllowAnonymousAttribute]
+	Dispose 
+	AddErrors 
+	RedirectToLocal 
+
+===============================
+Type: AuditController
+===============================
+	Index 
+	DumpControllerAttributes 
+	ListAttributes 
+
+===============================
+Type: HomeController
+===============================
+	Index 
+	About 
+	Contact 
+
+===============================
+Type: ManageController
+		[AuthorizeAttribute]
+===============================
+	Index 
+	RemoveLogin 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	AddPhoneNumber 
+	AddPhoneNumber 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	EnableTwoFactorAuthentication 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	DisableTwoFactorAuthentication 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	VerifyPhoneNumber 
+	VerifyPhoneNumber 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	RemovePhoneNumber 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ChangePassword 
+	ChangePassword 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	SetPassword 
+	SetPassword 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	ManageLogins 
+	LinkLogin 
+		[HttpPostAttribute]
+		[ValidateAntiForgeryTokenAttribute]
+	LinkLoginCallback 
+	Dispose 
+	AddErrors 
+	HasPassword 
+	HasPhoneNumber 
+

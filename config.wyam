@@ -1,0 +1,11 @@
+Settings[Keys.Host] = "daveaglick.com";
+Settings[Keys.LinksUseHttps] = true;
+Settings["Title"] = "Ali Moeen's Blog";
+Settings["Description"] = "My Personal Blog";
+Settings["Intro"] = "I like crafting software and digging into data. When i find some spare time, I write here.";
+
+Settings["ForntPagePostCount"] = 10;
+Settings["OlderPostsCount"] = 10;
+
+#recipe Blog 
+#theme Themes\Roxanne 

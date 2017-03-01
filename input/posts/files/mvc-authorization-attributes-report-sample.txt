@@ -1,0 +1,194 @@
+===============================
+Controller: AccountController 
+     [AuthorizeAttribute  AllowMultiple=True  Order=-1  ]
+
+===============================
+  Login 
+     [AllowAnonymousAttribute  ]
+
+  Login 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<Login>d__11  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  VerifyCode 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<VerifyCode>d__12  ]
+     [DebuggerStepThroughAttribute  ]
+     [AllowAnonymousAttribute  ]
+
+  VerifyCode 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<VerifyCode>d__13  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  Register 
+     [AllowAnonymousAttribute  ]
+
+  Register 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<Register>d__15  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ConfirmEmail 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<ConfirmEmail>d__16  ]
+     [DebuggerStepThroughAttribute  ]
+     [AllowAnonymousAttribute  ]
+
+  ForgotPassword 
+     [AllowAnonymousAttribute  ]
+
+  ForgotPassword 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<ForgotPassword>d__18  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ForgotPasswordConfirmation 
+     [AllowAnonymousAttribute  ]
+
+  ResetPassword 
+     [AllowAnonymousAttribute  ]
+
+  ResetPassword 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<ResetPassword>d__21  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ResetPasswordConfirmation 
+     [AllowAnonymousAttribute  ]
+
+  ExternalLogin 
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  SendCode 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<SendCode>d__24  ]
+     [DebuggerStepThroughAttribute  ]
+     [AllowAnonymousAttribute  ]
+
+  SendCode 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<SendCode>d__25  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ExternalLoginCallback 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<ExternalLoginCallback>d__26  ]
+     [DebuggerStepThroughAttribute  ]
+     [AllowAnonymousAttribute  ]
+
+  ExternalLoginConfirmation 
+     [AsyncStateMachineAttribute  StateMachineType=AccountController+<ExternalLoginConfirmation>d__27  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [AllowAnonymousAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  LogOff 
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ExternalLoginFailure 
+     [AllowAnonymousAttribute  ]
+
+
+===============================
+Controller: AuditController 
+===============================
+  Index 
+
+===============================
+Controller: HomeController 
+===============================
+  Index 
+  About 
+  Contact 
+
+===============================
+Controller: ManageController 
+     [AuthorizeAttribute  AllowMultiple=True  Order=-1  ]
+
+===============================
+  Index 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<Index>d__10  ]
+     [DebuggerStepThroughAttribute  ]
+
+  RemoveLogin 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<RemoveLogin>d__11  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  AddPhoneNumber 
+  AddPhoneNumber 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<AddPhoneNumber>d__13  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  EnableTwoFactorAuthentication 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<EnableTwoFactorAuthentication>d__14  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  DisableTwoFactorAuthentication 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<DisableTwoFactorAuthentication>d__15  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  VerifyPhoneNumber 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<VerifyPhoneNumber>d__16  ]
+     [DebuggerStepThroughAttribute  ]
+
+  VerifyPhoneNumber 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<VerifyPhoneNumber>d__17  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  RemovePhoneNumber 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<RemovePhoneNumber>d__18  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ChangePassword 
+  ChangePassword 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<ChangePassword>d__20  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  SetPassword 
+  SetPassword 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<SetPassword>d__22  ]
+     [DebuggerStepThroughAttribute  ]
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  ManageLogins 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<ManageLogins>d__23  ]
+     [DebuggerStepThroughAttribute  ]
+
+  LinkLogin 
+     [HttpPostAttribute  ]
+     [ValidateAntiForgeryTokenAttribute  AllowMultiple=False  Order=-1  ]
+
+  LinkLoginCallback 
+     [AsyncStateMachineAttribute  StateMachineType=ManageController+<LinkLoginCallback>d__25  ]
+     [DebuggerStepThroughAttribute  ]
+
+
