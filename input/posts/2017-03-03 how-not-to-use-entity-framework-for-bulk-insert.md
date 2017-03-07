@@ -20,7 +20,7 @@ DbContext.ChangeTracker.DetectChanges();
 DbContext.SaveChanges();
 ```
 
-As shown in the following Performance Profiler Report below, the performance of the above approach was less than ideal. It took around seven (7) seconds to import a file. That would not be sufficient for the large number of files that I need to bulk upload daily. 
+As shown in the following Profiler Report below, the performance of the above approach was less than ideal. It took around seven (7) seconds to import a file. That would not be sufficient for the large number of files that I need to bulk upload daily. 
 
 ![Entity Framework Bulk Insert Performance Overhead](images/entity-framework-bulk-insert-performance-overhead.png)
 
