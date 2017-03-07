@@ -1,5 +1,5 @@
-Title: How not to use Entity Framework for Bulk Insert
-Lead: I used SqlBulkCopy as a much more efficient alternative to Entity Framework for Bulk Upload
+Title: How Not to Use Entity Framework for Bulk Insert
+Lead: I Used Sqlbulkcopy as a Much More Efficient Alternative to Entity Framework for Bulk Upload
 
 Date: 3/3/2017
 
@@ -20,7 +20,9 @@ DbContext.ChangeTracker.DetectChanges();
 DbContext.SaveChanges();
 ```
 
-The performance of the above approach was less than ideal. It took around seven (7) seconds to import a file. That would not be sufficient for the large number of files that I need to bulk upload daily. 
+As shown in the following Performance Profiler Report below, the performance of the above approach was less than ideal. It took around seven (7) seconds to import a file. That would not be sufficient for the large number of files that I need to bulk upload daily. 
+
+![Entity Framework Bulk Insert Performance Overhead](images/entity-framework-bulk-insert-performance-overhead.png)
 
 The problem is that Entity Framework inserts entities one-by-one. After inserts, it reads back the row into the DbSet. That is the right thing to do for ORM operations, but not ideal for bulk operations. 
 
