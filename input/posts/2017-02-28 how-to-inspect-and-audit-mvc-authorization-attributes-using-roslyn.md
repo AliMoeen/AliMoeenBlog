@@ -24,7 +24,7 @@ While Reflection does the job, the [.NET Compiler Platform ("Roslyn")](https://g
 
 What I like about Roslyn is it can just open any solution and extract (nail-down) such rich information (everything you wish to know) from its code. I found this Roslyn approach is more testable since you don’t need to compile the application to extract what you need. It analyses the code, not assembly. 
 Below is a simple command line application that opens a solution, and extracts the MVC controller types’ authorization attribute report data from its MVC Web Application Project. 
-The core logic of the code is based on the below Roslyn API calls. IMO, it does not get any sweeter easier.
+The core logic of the code is based on the below Roslyn API calls. IMO, it does not get any ~~sweeter~~ easier.
 
 ```cs
 var controller = compilation.GetTypeByMetadataName("System.Web.Mvc.Controller");
