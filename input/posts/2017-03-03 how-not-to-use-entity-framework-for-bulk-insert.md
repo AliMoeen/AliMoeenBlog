@@ -30,7 +30,7 @@ The problem is that Entity Framework inserts entities one-by-one. After inserts,
 
 While there are 3rd party products available, as far as I know, there is no built-in ~~~bulk insert~~~ bulk add option in Entity Framework. So, I had to look somewhere else.
 
-The solution I chose is [`System.Data.SqlClient.SqlBulkCopy`](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlbulkcopy(v=vs.110).aspx). It perfectly provides Bulk Insert operations to .NET application like what is available through BCP, SSIS or TSQL BULK INSERT.
+The solution I chose is [`System.Data.SqlClient.SqlBulkCopy`](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlbulkcopy(v=vs.110).aspx). It perfectly provides Bulk Insert (like what is available through BCP, SSIS or TSQL BULK INSERT) operations to .NET applications.
 
 The SQL Profiler shows a trace of insert bulk statements like below:
 

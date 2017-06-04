@@ -9,7 +9,7 @@
     <div class="col-sm-8 right-border">
         @{
             bool first = true;
-            foreach(IDocument doc in Documents[BlogKeys.Posts].Take(ForntPagePostCount))
+            foreach(IDocument doc in Model.DocumentList(Keys.PageDocuments).Take(ForntPagePostCount))
             {                
                 if (!first)
                 {
@@ -67,12 +67,12 @@
             </ul>   
         </div>
         
-        @if( Documents[BlogKeys.Posts].Count()>ForntPagePostCount)
+        @if( Model.DocumentList(Keys.PageDocuments).Count()>ForntPagePostCount)
         {
         <div class = "well">
         <h5>Older Posts</h5>
         <ul class="list-unstyled">
-            @foreach(IDocument doc in Documents[BlogKeys.Posts].Skip(ForntPagePostCount).Take(OlderPostsCount))
+            @foreach(IDocument doc in Model.DocumentList(Keys.PageDocuments).Skip(ForntPagePostCount).Take(OlderPostsCount))
             {        
                 <li><a href="@Context.GetLink(doc)">@doc.WithoutSettings.String(BlogKeys.Title)</a></li>
             }

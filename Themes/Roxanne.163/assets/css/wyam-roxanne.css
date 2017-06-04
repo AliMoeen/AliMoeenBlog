@@ -1,0 +1,269 @@
+
+/*!
+ * Wyam Roxanne Theme
+ * 
+ * Copyright 2017 Ali Moeen
+ *
+ * Licensed under MIT.  
+ *
+  * Roxanne Wyam Bootstrap Theme Adapted and Extended by Ali Moeen from Modern Business (http://startbootstrap.com/).
+ *
+ */
+
+/* Global Styles */
+
+/* @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic); */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+
+
+
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+
+body {
+
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+	color: #232323;
+	background-color: #FBFAF7;
+	margin: 0;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+.navbar-brand
+{
+    font-size: 26px;
+    color: #ffffff;
+
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+  
+  margin:36px 0 10px;
+}
+*/
+
+.post-meta
+{
+    color: #9a9a9a;
+    font-size: 16px;
+}
+p, ul, ol, table, dl {
+  margin:0 0 22px;
+}
+
+h1, h2, h3 {
+	/*
+    font-family: 'Arvo', Monaco, serif;
+   line-height:1.3;
+   */
+	font-weight: normal;
+}
+
+/*
+h1,h2, h3 {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;	
+}
+*/
+.post-title{
+  color:#C30000;
+}
+
+h1,h2, h3, h4 {
+    color:#303030;
+}
+h1 {
+	font-size: 36px;
+    
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4, h5, h6 {
+	/*font-family: 'Arvo', Monaco, serif;*/
+	font-size: 20px;
+}
+
+a {
+  color:#C30000;
+  font-weight:200;
+  text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#C30000;
+}
+
+a small {
+	font-size: 12px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+  font-weight:700;
+}
+
+/*
+ul li {
+  list-style-position: inside;
+  list-style: disc;
+  padding-left: 25px;
+}
+
+ol li {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 20px;
+}
+*/
+blockquote {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+dl, dt, dd, dl p {
+	font-color: #444;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+hr {
+  border:0;
+  background:#ccc;
+  height:1px;
+  margin:0 0 24px;
+}
+
+.copyright {
+        font-size: 14px;
+}
+
+/* Some adjustments to markdown tables */
+
+.table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+.table tr {
+    border-top: 1px solid #c6cbd1;
+}
+.table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
