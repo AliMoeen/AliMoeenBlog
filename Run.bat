@@ -1,1 +1,1 @@
-..\wyam184\wyam --preview --watch  --log log.txt --output ..\blog184.out\blog
+..\Wyam-v1.5.0\wyam --preview --watch  --log log.txt --output ..\blog.out
